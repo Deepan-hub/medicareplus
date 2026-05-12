@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MediCare Plus — Your Health, Our Priority</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%232563eb'/%3E%3Cstop offset='100%25' stop-color='%230ea5e9'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='14' fill='%23f0f9ff'/%3E%3Cpath d='M32 12v40M12 32h40' stroke='url(%23g)' stroke-width='8' stroke-linecap='round'/%3E%3C/svg%3E" />
+  <link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%232563eb'/%3E%3Cstop offset='100%25' stop-color='%230ea5e9'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='14' fill='%23f0f9ff'/%3E%3Cpath d='M32 12v40M12 32h40' stroke='url(%23g)' stroke-width='8' stroke-linecap='round'/%3E%3C/svg%3E" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <nav id="navbar">
+    <div class="container">
+      <a href="#" class="logo">
+        <svg width="32" height="32" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="64" height="64" rx="14" fill="url(#logog)"/>
+          <path d="M32 14v36M14 32h36" stroke="white" stroke-width="7" stroke-linecap="round"/>
+          <defs><linearGradient id="logog" x1="0" y1="0" x2="64" y2="64"><stop stop-color="#2563eb"/><stop offset="1" stop-color="#0ea5e9"/></linearGradient></defs>
+        </svg>
+        MediCare Plus
+      </a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav-overlay" id="navOverlay"></div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#doctors">Doctors</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#appointment" class="nav-cta">Book Now</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="home">
+    <div class="hero-particles">
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+    </div>
+    <div class="container">
+      <div>
+        <span class="section-label" style="margin-bottom:16px;display:inline-block;">Quality Healthcare Since 2005</span>
+        <h1>
+          Your Health Is<br>
+          Our <span class="gradient-text">Top Priority</span>
+          <span class="hero-emoji">❤️</span>
+        </h1>
+        <p>
+          Expert medical care with compassion and cutting-edge technology.
+          From routine checkups to specialized treatments — we're here for you and your family.
+        </p>
+        <div class="hero-buttons">
+          <a href="#appointment" class="btn btn-primary"><span>Book an Appointment →</span></a>
+          <a href="#services" class="btn btn-outline">Explore Services</a>
+        </div>
+      </div>
+      <div class="hero-image-wrapper">
+        <img
+          src="https://images.unsplash.com/photo-1631217868264-e5b90bb7e133?w=600&h=450&fit=crop&auto=format"
+          alt="Medical team"
+          class="hero-image-main"
+          loading="lazy"
+        />
+        <div class="hero-badge hero-badge-1">
+          <div class="badge-icon badge-green">✓</div>
+          <div>
+            <div>10,000+</div>
+            <div class="badge-value">Happy Patients</div>
+          </div>
+        </div>
+        <div class="hero-badge hero-badge-2">
+          <div class="badge-icon badge-blue">★</div>
+          <div>
+            <div>4.9 Rating</div>
+            <div class="badge-value">Google Reviews</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== STATS ===== -->
+  <section class="stats" id="stats">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item reveal"><div class="stat-number" data-count="18">0</div><div class="stat-label">Years of Excellence</div></div>
+        <div class="stat-item reveal"><div class="stat-number" data-count="25000">0</div><div class="stat-label">Patients Treated</div></div>
+        <div class="stat-item reveal"><div class="stat-number" data-count="50">0</div><div class="stat-label">Expert Doctors</div></div>
+        <div class="stat-item reveal"><div class="stat-number" data-count="98">0</div><div class="stat-label">Satisfaction Rate %</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SERVICES ===== -->
+  <section id="services">
+    <div class="container">
+      <div style="text-align:center;"><span class="section-label">What We Offer</span></div>
+      <h2 class="section-title reveal">Comprehensive Medical Specialties</h2>
+      <p class="section-subtitle reveal">Expert care across six domains, all under one roof</p>
+      <div class="services-grid">
+        <div class="service-card reveal" style="transition-delay:.05s">
+          <div class="service-icon-wrapper"><span class="service-icon">❤️</span></div>
+          <h3>Cardiology</h3>
+          <p>Heart health assessments, diagnostics, and personalized treatment plans tailored to your needs.</p>
+          <a href="#appointment" class="service-link">Book a consultation →</a>
+        </div>
+        <div class="service-card reveal" style="transition-delay:.1s">
+          <div class="service-icon-wrapper"><span class="service-icon">🧠</span></div>
+          <h3>Neurology</h3>
+          <p>Expert care for neurological disorders with advanced imaging and cutting-edge therapy options.</p>
+          <a href="#appointment" class="service-link">Book a consultation →</a>
+        </div>
+        <div class="service-card reveal" style="transition-delay:.15s">
+          <div class="service-icon-wrapper"><span class="service-icon">🦷</span></div>
+          <h3>Dental Care</h3>
+          <p>Complete dental services from routine cleanings to advanced restorative procedures.</p>
+          <a href="#appointment" class="service-link">Book a consultation →</a>
+        </div>
+        <div class="service-card reveal" style="transition-delay:.2s">
+          <div class="service-icon-wrapper"><span class="service-icon">👁️</span></div>
+          <h3>Ophthalmology</h3>
+          <p>Comprehensive eye exams, vision correction, and treatment of eye conditions.</p>
+          <a href="#appointment" class="service-link">Book a consultation →</a>
+        </div>
+        <div class="service-card reveal" style="transition-delay:.25s">
+          <div class="service-icon-wrapper"><span class="service-icon">🦴</span></div>
+          <h3>Orthopedics</h3>
+          <p>Bone, joint, and muscle care with both surgical and non-surgical treatment approaches.</p>
+          <a href="#appointment" class="service-link">Book a consultation →</a>
+        </div>
+        <div class="service-card reveal" style="transition-delay:.3s">
+          <div class="service-icon-wrapper"><span class="service-icon">👶</span></div>
+          <h3>Pediatrics</h3>
+          <p>Specialized healthcare for children from infancy through adolescence in a friendly environment.</p>
+          <a href="#appointment" class="service-link">Book a consultation →</a>
+        </div>
+        <div class="services-swipe-hint">← Swipe to see more services →</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== DOCTORS ===== -->
+  <section id="doctors">
+    <div class="container">
+      <div style="text-align:center;"><span class="section-label">Our Team</span></div>
+      <h2 class="section-title reveal">Meet Our Expert Doctors</h2>
+      <p class="section-subtitle reveal">Highly qualified professionals dedicated to your well-being</p>
+      <div class="doctors-grid">
+        <div class="doctor-card reveal" style="transition-delay:.05s">
+          <div class="doctor-img-wrapper">
+            <img
+              src="https://images.unsplash.com/photo-1594824476967-48c8b964273f?w=400&h=400&fit=crop&auto=format"
+              alt="Dr. Sarah Mitchell"
+              class="doctor-img"
+              loading="lazy"
+            />
+            <div class="doctor-social">
+              <a href="#" aria-label="Twitter">𝕏</a>
+              <a href="#" aria-label="LinkedIn">in</a>
+              <a href="#" aria-label="Email">✉</a>
+            </div>
+          </div>
+          <div class="doctor-body">
+            <h3>Dr. Sarah Mitchell</h3>
+            <span class="doctor-spec">Cardiologist</span>
+            <div class="doctor-stars">★★★★★</div>
+            <p class="doctor-desc">15+ years experience in interventional cardiology. Harvard-trained, board-certified specialist.</p>
+          </div>
+        </div>
+        <div class="doctor-card reveal" style="transition-delay:.1s">
+          <div class="doctor-img-wrapper">
+            <img
+              src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=400&h=400&fit=crop&auto=format"
+              alt="Dr. James Rodriguez"
+              class="doctor-img"
+              loading="lazy"
+            />
+            <div class="doctor-social">
+              <a href="#" aria-label="Twitter">𝕏</a>
+              <a href="#" aria-label="LinkedIn">in</a>
+              <a href="#" aria-label="Email">✉</a>
+            </div>
+          </div>
+          <div class="doctor-body">
+            <h3>Dr. James Rodriguez</h3>
+            <span class="doctor-spec">Neurologist</span>
+            <div class="doctor-stars">★★★★★</div>
+            <p class="doctor-desc">Leading expert in stroke management and neurodegenerative diseases. 12+ years of clinical experience.</p>
+          </div>
+        </div>
+        <div class="doctor-card reveal" style="transition-delay:.15s">
+          <div class="doctor-img-wrapper">
+            <img
+              src="https://images.unsplash.com/photo-1614608682850-e0d6ed316d47?w=400&h=400&fit=crop&auto=format"
+              alt="Dr. Emily Chen"
+              class="doctor-img"
+              loading="lazy"
+            />
+            <div class="doctor-social">
+              <a href="#" aria-label="Twitter">𝕏</a>
+              <a href="#" aria-label="LinkedIn">in</a>
+              <a href="#" aria-label="Email">✉</a>
+            </div>
+          </div>
+          <div class="doctor-body">
+            <h3>Dr. Emily Chen</h3>
+            <span class="doctor-spec">Pediatrician</span>
+            <div class="doctor-stars">★★★★★</div>
+            <p class="doctor-desc">Board-certified pediatrician passionate about child wellness and developmental care.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TESTIMONIALS ===== -->
+  <section id="testimonials">
+    <div class="container">
+      <div style="text-align:center;"><span class="section-label">Patient Stories</span></div>
+      <h2 class="section-title reveal">What Our Patients Say</h2>
+      <p class="section-subtitle reveal">Real stories from people we've had the privilege to care for</p>
+      <div class="testi-fade reveal">
+        <div class="testi-track" id="testiTrack">
+          <div class="testi-slide">
+            <div class="testimonial-card">
+              <div class="testimonial-stars">★★★★★</div>
+              <p class="testimonial-text">"The care I received at MediCare Plus was exceptional. Dr. Mitchell took the time to explain everything and made me feel completely at ease."</p>
+              <div class="testimonial-author">
+                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&auto=format" alt="" class="testimonial-avatar" loading="lazy" />
+                <div>
+                  <div class="testimonial-name">Michael R.</div>
+                  <div class="testimonial-location">Austin, TX</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="testi-slide">
+            <div class="testimonial-card">
+              <div class="testimonial-stars">★★★★★</div>
+              <p class="testimonial-text">"I've never felt more listened to by a medical team. The pediatric department is fantastic — my kids actually look forward to their visits!"</p>
+              <div class="testimonial-author">
+                <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop&auto=format" alt="" class="testimonial-avatar" loading="lazy" />
+                <div>
+                  <div class="testimonial-name">Lisa K.</div>
+                  <div class="testimonial-location">Denver, CO</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="testi-slide">
+            <div class="testimonial-card">
+              <div class="testimonial-stars">★★★★★</div>
+              <p class="testimonial-text">"Quick appointments, minimal wait times, and the staff is incredibly friendly. The online booking made everything so convenient."</p>
+              <div class="testimonial-author">
+                <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100&h=100&fit=crop&auto=format" alt="" class="testimonial-avatar" loading="lazy" />
+                <div>
+                  <div class="testimonial-name">David J.</div>
+                  <div class="testimonial-location">Seattle, WA</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="testi-slide">
+            <div class="testimonial-card">
+              <div class="testimonial-stars">★★★★★</div>
+              <p class="testimonial-text">"From the moment I walked in, the staff made me feel welcome. Dr. Rodriguez listened carefully and found the root cause of my issue. Truly grateful."</p>
+              <div class="testimonial-author">
+                <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop&auto=format" alt="" class="testimonial-avatar" loading="lazy" />
+                <div>
+                  <div class="testimonial-name">Sarah M.</div>
+                  <div class="testimonial-location">Portland, OR</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="testi-slide">
+            <div class="testimonial-card">
+              <div class="testimonial-stars">★★★★★</div>
+              <p class="testimonial-text">"The telehealth option is a game-changer. I had a follow-up from home and the video call was smooth, professional, and just as thorough as an in-person visit."</p>
+              <div class="testimonial-author">
+                <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop&auto=format" alt="" class="testimonial-avatar" loading="lazy" />
+                <div>
+                  <div class="testimonial-name">James T.</div>
+                  <div class="testimonial-location">Phoenix, AZ</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="testi-controls">
+          <button class="testi-arrow testi-prev" aria-label="Previous review">‹</button>
+          <div class="testi-dots" id="testiDots"></div>
+          <button class="testi-arrow testi-next" aria-label="Next review">›</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FAQ ===== -->
+  <section id="faq">
+    <div class="container">
+      <div style="text-align:center;"><span class="section-label">Got Questions?</span></div>
+      <h2 class="section-title reveal">Frequently Asked Questions</h2>
+      <p class="section-subtitle reveal">Everything you need to know before your visit</p>
+      <div class="faq-list">
+        <div class="faq-item active reveal">
+          <button class="faq-question">
+            How do I book an appointment?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            You can book online using the form on this page, call us directly at <strong>(555) 123-4567</strong>, or visit our front desk during operating hours. Online bookings are confirmed within 24 hours.
+          </div>
+        </div>
+        <div class="faq-item reveal">
+          <button class="faq-question">
+            What insurance plans do you accept?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            We accept most major insurance plans including <strong>Blue Cross, Aetna, Cigna, UnitedHealthcare, and Medicare</strong>. Contact our billing department for plan-specific coverage questions.
+          </div>
+        </div>
+        <div class="faq-item reveal">
+          <button class="faq-question">
+            What are your operating hours?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <strong>Monday – Friday:</strong> 7:00 AM – 8:00 PM<br />
+            <strong>Saturday:</strong> 8:00 AM – 4:00 PM<br />
+            <strong>Sunday:</strong> 10:00 AM – 2:00 PM (emergency only)
+          </div>
+        </div>
+        <div class="faq-item reveal faq-hidden">
+          <button class="faq-question">
+            Do you offer telehealth consultations?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            Yes, we offer virtual visits for follow-ups and select primary care consultations. You can select <strong>"Video Visit"</strong> when booking online or request it when calling our office.
+          </div>
+        </div>
+        <div class="faq-item reveal faq-hidden">
+          <button class="faq-question">
+            What should I bring to my first appointment?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            Please bring a <strong>valid photo ID</strong>, your <strong>insurance card</strong>, a list of current medications, and any relevant medical records or test results from previous providers.
+          </div>
+        </div>
+      </div>
+      <button class="faq-show-btn" id="faqShowBtn">Show more questions ↓</button>
+    </div>
+  </section>
+
+  <!-- ===== APPOINTMENT ===== -->
+  <section id="appointment">
+    <div class="container">
+      <div style="text-align:center;"><span class="section-label">Get Started</span></div>
+      <h2 class="section-title reveal">Book an Appointment</h2>
+      <p class="section-subtitle reveal">Schedule your visit — we'll confirm within 24 hours</p>
+      <div class="form-wrapper reveal">
+        <form id="appointmentForm">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="firstName">First Name</label>
+              <input type="text" id="firstName" required placeholder="John" />
+            </div>
+            <div class="form-group">
+              <label for="lastName">Last Name</label>
+              <input type="text" id="lastName" required placeholder="Doe" />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" required placeholder="john@example.com" />
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" required placeholder="(555) 123-4567" />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="department">Department</label>
+              <select id="department" required>
+                <option value="">Select a department</option>
+                <option>Cardiology</option>
+                <option>Neurology</option>
+                <option>Dental Care</option>
+                <option>Ophthalmology</option>
+                <option>Orthopedics</option>
+                <option>Pediatrics</option>
+                <option>General Checkup</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="date">Preferred Date</label>
+              <input type="date" id="date" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="message">Additional Notes</label>
+            <textarea id="message" placeholder="Any specific concerns, symptoms, or requests..."></textarea>
+          </div>
+          <button type="submit" class="form-submit">Request Appointment →</button>
+        </form>
+        <div class="form-success" id="formSuccess">
+          <div class="form-success-icon">✅</div>
+          <h3>Request Submitted!</h3>
+          <p>Thank you! Your appointment request has been received. Our team will contact you within 24 hours to confirm your visit.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== MOBILE STICKY CTA ===== -->
+  <a href="#appointment" class="mobile-sticky-cta">📅 Book an Appointment</a>
+
+  <!-- ===== MOBILE FLOATING CALL ===== -->
+  <a href="tel:+15551234567" class="mobile-call-btn" aria-label="Call us">📞</a>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <div class="container">
+      <div>
+        <a href="#" class="logo" style="font-size:1.3rem;margin-bottom:16px;display:inline-flex;">
+          <svg width="28" height="28" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="64" height="64" rx="14" fill="url(#flogo)"/>
+            <path d="M32 14v36M14 32h36" stroke="white" stroke-width="7" stroke-linecap="round"/>
+            <defs><linearGradient id="flogo" x1="0" y1="0" x2="64" y2="64"><stop stop-color="#2563eb"/><stop offset="1" stop-color="#0ea5e9"/></linearGradient></defs>
+          </svg>
+          MediCare Plus
+        </a>
+        <p style="margin-bottom:20px;max-width:340px;">
+          Delivering compassionate, high-quality healthcare to our community since 2005.
+          Your well-being is at the heart of everything we do.
+        </p>
+        <div class="footer-newsletter">
+          <h3 style="margin-bottom:10px;">Subscribe to Our Newsletter</h3>
+          <form onsubmit="event.preventDefault();alert('Thank you for subscribing!');">
+            <input type="email" placeholder="Enter your email" required />
+            <button type="submit">Subscribe</button>
+          </form>
+        </div>
+      </div>
+      <div>
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#services">→ Our Services</a></li>
+          <li><a href="#doctors">→ Meet the Doctors</a></li>
+          <li><a href="#testimonials">→ Patient Stories</a></li>
+          <li><a href="#faq">→ FAQ</a></li>
+          <li><a href="#appointment">→ Book Appointment</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Contact Info</h3>
+        <ul>
+          <li>📍 123 Health Avenue, Suite 100</li>
+          <li>📞 (555) 123-4567</li>
+          <li>✉ info@medicareplus.com</li>
+          <li>🌐 www.medicareplus.com</li>
+        </ul>
+      </div>
+      <div class="footer-hours-col">
+        <h3>Office Hours</h3>
+        <ul>
+          <li>Mon – Fri: 7:00 AM – 8:00 PM</li>
+          <li>Saturday: 8:00 AM – 4:00 PM</li>
+          <li>Sunday: 10:00 AM – 2:00 PM</li>
+          <li style="margin-top:12px;color:var(--primary-300);font-size:.85rem;">🚑 24/7 Emergency Available</li>
+        </ul>
+      </div>
+    </div>
+    <div class="container">
+      <div class="footer-bottom">&copy; 2026 MediCare Plus. All rights reserved. Crafted with care.</div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
